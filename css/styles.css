@@ -75,54 +75,49 @@
          /* ===== CLEAN NAVBAR (FINAL) ===== */
 
        .site-header {
-         position: absolute; /* makes it overlay on top */
+         position: absolute;
          top: 0;
          left: 0;
          width: 100%;
-         background: transparent; /* transparent background */
+         background: transparent;
          z-index: 1000;
-         padding: 25px 40px;
+         padding: 18px 40px;
        }
        
-       /* layout */
        .nav {
          display: flex;
          justify-content: space-between;
          align-items: center;
        }
        
-       /* logo (left side) */
        .brand {
-         font-size: 14px;
+         font-size: 13px;
          font-weight: 500;
          color: #5a2ca0;
          text-decoration: none;
        }
        
-       /* nav container */
        .nav-links {
          display: flex;
-         gap: 25px;
+         gap: 22px;
          list-style: none;
          margin: 0;
          padding: 0;
+         margin-left: auto;
        }
        
-       /* links */
        .nav-links a {
-         font-size: 13px; /* smaller text */
+         font-size: 12px;
          color: #666;
          text-decoration: none;
          position: relative;
          transition: 0.3s;
        }
        
-       /* hover */
        .nav-links a:hover {
          color: black;
        }
        
-       /* underline animation */
        .nav-links a::after {
          content: "";
          position: absolute;
@@ -137,7 +132,6 @@
        .nav-links a:hover::after {
          width: 100%;
        }
-        
         /* Header Section */
        header#home {
          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
