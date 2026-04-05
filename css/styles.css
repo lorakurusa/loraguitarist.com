@@ -725,8 +725,26 @@
            font-size: 2.5rem;
          }
        
-         header {
+         header#home {
            background-position: left;
+         }
+       
+         .site-header {
+           padding: 14px 20px;
+         }
+       
+         .nav-links {
+           gap: 14px;
+           flex-wrap: wrap;
+           justify-content: flex-end;
+         }
+       
+         .brand {
+           font-size: 12px;
+         }
+       
+         .nav-links a {
+           font-size: 11px;
          }
        }
      
