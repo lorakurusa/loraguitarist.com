@@ -71,19 +71,85 @@
         .btn:hover {
             background: #3a5a80;
         }
+
+         /* ===== CLEAN NAVBAR (FINAL) ===== */
+
+       .site-header {
+         position: absolute; /* makes it overlay on top */
+         top: 0;
+         left: 0;
+         width: 100%;
+         background: transparent; /* transparent background */
+         z-index: 1000;
+         padding: 25px 40px;
+       }
+       
+       /* layout */
+       .nav {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+       }
+       
+       /* logo (left side) */
+       .brand {
+         font-size: 14px;
+         font-weight: 500;
+         color: #5a2ca0;
+         text-decoration: none;
+       }
+       
+       /* nav container */
+       .nav-links {
+         display: flex;
+         gap: 25px;
+         list-style: none;
+         margin: 0;
+         padding: 0;
+       }
+       
+       /* links */
+       .nav-links a {
+         font-size: 13px; /* smaller text */
+         color: #666;
+         text-decoration: none;
+         position: relative;
+         transition: 0.3s;
+       }
+       
+       /* hover */
+       .nav-links a:hover {
+         color: black;
+       }
+       
+       /* underline animation */
+       .nav-links a::after {
+         content: "";
+         position: absolute;
+         left: 0;
+         bottom: -4px;
+         width: 0%;
+         height: 1px;
+         background: black;
+         transition: 0.3s;
+       }
+       
+       .nav-links a:hover::after {
+         width: 100%;
+       }
         
         /* Header Section */
-        header {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                        url('../images/firstphoto.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: white;
-            text-align: center;
-            padding: 100px 0;
-            min-height: 50vh; /* Makes header full viewport height */
-        }
+       header#home {
+         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                     url('../images/firstphoto.jpg');
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         color: white;
+         text-align: center;
+         padding: 100px 0;
+         min-height: 50vh;
+       }
         
         .header-content {
             max-width: 800px;
@@ -654,101 +720,19 @@
             margin: 0 10px;
             font-size: 2.5rem;
         }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .about-content {
-                flex-direction: column;
-            }
-            
-            .header-content h1 {
-                font-size: 2.5rem;
-            }
 
-            header {
-                background-position: left;
-            }
-/* ===== NAVBAR FINAL OVERRIDE ===== */
-
-       .site-header {
-         position: sticky !important;
-         top: 0 !important;
-         z-index: 1000 !important;
-         background: #f5f2ec !important;
-         padding: 20px 0 !important;
-         width: 100% !important;
-       }
-       
-       .site-header .nav {
-         display: flex !important;
-         justify-content: space-between !important;
-         align-items: center !important;
-         width: 100% !important;
-       }
-       
-       .site-header .brand {
-         font-weight: 700 !important;
-         font-size: 1.6rem !important;
-         color: #5a2ca0 !important;
-         text-decoration: none !important;
-       }
-       
-       .site-header nav {
-         margin-left: auto !important;
-       }
-       
-       .site-header .nav-links {
-         display: flex !important;
-         gap: 30px !important;
-         list-style: none !important;
-         margin: 0 !important;
-         padding: 0 !important;
-       }
-       
-       .site-header .nav-links li {
-         margin: 0 !important;
-         padding: 0 !important;
-       }
-       
-       .site-header .nav-links a {
-         color: #6b6b6b !important;
-         text-decoration: none !important;
-         font-size: 1rem !important;
-         font-weight: 400 !important;
-         position: relative !important;
-         transition: color 0.3s ease !important;
-       }
-       
-       .site-header .nav-links a:hover {
-         color: #000 !important;
-       }
-       
-       .site-header .nav-links a::after {
-         content: "" !important;
-         position: absolute !important;
-         left: 0 !important;
-         bottom: -6px !important;
-         width: 0 !important;
-         height: 2px !important;
-         background: #000 !important;
-         transition: width 0.3s ease !important;
-       }
-       
-       .site-header .nav-links a:hover::after {
-         width: 100% !important;
-       }
-       
-       .site-header .hamburger {
-         display: none !important;
-       }
-       
-       @media (max-width: 900px) {
-         .site-header .nav-links {
-           display: none !important;
+ /* Responsive Design */
+       @media (max-width: 768px) {
+         .about-content {
+           flex-direction: column;
          }
        
-         .site-header .hamburger {
-           display: block !important;
+         .header-content h1 {
+           font-size: 2.5rem;
+         }
+       
+         header {
+           background-position: left;
          }
        }
-        }
+     
