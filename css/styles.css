@@ -92,8 +92,9 @@
        }
        
        .nav-links a {
-         font-size: 12px;
-         color: #666;
+         font-weight: 500px;     
+         font-size: 15px;
+         color: white;
          text-decoration: none;
          position: relative;
          transition: 0.3s;
