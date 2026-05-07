@@ -68,11 +68,15 @@
          z-index: 1000;
          padding: 18px 40px;
        }
-       
+
        .nav {
          display: flex;
          justify-content: space-between;
          align-items: center;
+         border-top: 2px solid #fff;    /* White line on top */
+         border-bottom: 2px solid #fff; /* White line on bottom */
+         background-color: #333;       /* Example background for contrast */
+         padding: 10px 0;
        }
        
        .brand {
