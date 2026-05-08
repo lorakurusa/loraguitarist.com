@@ -78,6 +78,12 @@
          width: 100%;
        }
 
+       .nav-left {
+         display: flex;
+         align-items: center;
+         gap: 16px;
+       }
+
        .nav-socials {
          display: flex;
          gap: 16px;
