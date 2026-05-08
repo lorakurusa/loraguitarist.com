@@ -73,10 +73,19 @@
          display: flex;
          justify-content: space-between;
          align-items: center;
-         border-bottom: 2px solid #fff;
          background-color: transparent;
          padding: 12px 4.25rem;
          width: 100%;
+       }
+
+       .nav::after {
+         content: '';
+         position: absolute;
+         bottom: 0;
+         left: 4.25rem;
+         right: 4.25rem;
+         height: 2px;
+         background: #fff;
        }
 
        .nav-left {
@@ -105,8 +114,9 @@
 
        #Logo {
          position: absolute;
-         left: 145px;
-         top: 0;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);
        }
 
        #Logo img {
