@@ -188,22 +188,18 @@
         /* Newsletter panel */
         .newsletter-panel {
             position: absolute;
-            left: 0;
+            right: 0;
             bottom: 0;
             background: #2c1a0e;
-            padding: 20px 32px;
-            width: 560px;
-            max-width: 48%;
-            height: 150px;
+            padding: 18px 29px;
+            width: 504px;
+            max-width: 43%;
+            height: 135px;
             display: flex;
             align-items: center;
-            gap: 32px;
+            gap: 29px;
             border-top: 3px solid #7a9e6e;
-            border-right: 3px solid #7a9e6e;
-        }
-
-        .newsletter-text {
-            flex: 0 0 auto;
+            border-left: 3px solid #7a9e6e;
         }
 
         .newsletter-text {
@@ -212,7 +208,7 @@
 
         .newsletter-title {
             color: #7a9e6e;
-            font-size: 0.75rem;
+            font-size: 0.68rem;
             font-weight: 700;
             letter-spacing: 0.2em;
             text-transform: uppercase;
@@ -221,7 +217,7 @@
 
         .newsletter-heading {
             color: #f5ede3;
-            font-size: 1.2rem;
+            font-size: 1.08rem;
             font-weight: 300;
             font-style: italic;
             letter-spacing: 0.03em;
@@ -241,8 +237,8 @@
 
         .newsletter-input {
             width: 100%;
-            padding: 10px 14px;
-            font-size: 0.85rem;
+            padding: 9px 13px;
+            font-size: 0.77rem;
             border: 1px solid #5a3e28;
             background: rgba(255,255,255,0.06);
             color: #f5ede3;
@@ -259,11 +255,11 @@
         }
 
         .newsletter-btn {
-            padding: 10px;
+            padding: 9px;
             background: #7a9e6e;
             color: #fff;
             font-weight: 600;
-            font-size: 0.8rem;
+            font-size: 0.72rem;
             letter-spacing: 0.15em;
             text-transform: uppercase;
             border: none;
