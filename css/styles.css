@@ -79,12 +79,12 @@
        }
 
        #Logo {
-         flex-shrink: 0;
-         margin-right: 16px;
+         display: block;
+         padding: 8px 20px;
        }
 
        #Logo img {
-         height: 35px;
+         height: 70px;
          width: auto;
          display: block;
        }
