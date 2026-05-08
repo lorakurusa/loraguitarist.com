@@ -152,13 +152,14 @@
        header#home {
          position: relative;
          background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/IMG_7634.jpg');
-         background-size: cover;
+         background-size: 100% 100%;
          background-position: center;
          background-repeat: no-repeat;
          color: white;
          text-align: center;
          padding: 100px 0;
-         min-height: 70vh;
+         aspect-ratio: 1920 / 1078;
+         min-height: unset;
 }
                
         .header-content {
