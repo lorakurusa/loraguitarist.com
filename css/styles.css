@@ -60,10 +60,10 @@
          /* ===== CLEAN NAVBAR (FINAL) ===== */
 
        .site-header {
-         position: fixed;
+         position: absolute;
          top: 0;
          left: 0;
-         width: 100vw;
+         width: 100%;
          background: transparent;
          z-index: 1000;
          margin: 0;
@@ -86,8 +86,9 @@
          align-items: center;
        }
 
-       .nav-socials a {
-         color: white;
+       .nav-socials a,
+       .nav-socials a i {
+         color: white !important;
          font-size: 22px;
          text-decoration: none;
          transition: opacity 0.3s;
