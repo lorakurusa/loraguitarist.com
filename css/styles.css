@@ -187,9 +187,9 @@
             right: 4.25rem;
             bottom: 8%;
             background: #c0392b;
-            padding: 28px 32px;
-            max-width: 420px;
-            width: 100%;
+            padding: 24px 36px;
+            width: 560px;
+            max-width: 90%;
         }
 
         .newsletter-title {
