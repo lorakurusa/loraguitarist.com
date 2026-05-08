@@ -457,20 +457,47 @@
 
         .info-content {
             display: flex;
-            width: 50%;
-            margin: 0 auto;
-            align-items: center;
+            gap: 60px;
+            align-items: flex-start;
+            margin-top: 30px;
         }
-        
+
         .info-text {
-            text-align: center;
-            flex: 2;
+            flex: 1;
+            text-align: left;
         }
 
         .info-text li {
             list-style-type: none;
             text-align: left;
-            padding-left: 10%;
+            padding-left: 0;
+        }
+
+        .info-images {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .info-images img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .info-image-placeholder {
+            width: 100%;
+            aspect-ratio: 4/3;
+            background: #f0ebe5;
+            border: 2px dashed #b89c84;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #b89c84;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
         }   
 
 
