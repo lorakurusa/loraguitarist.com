@@ -182,14 +182,21 @@
         }
 
         /* Newsletter panel */
+        #newsletter {
+            padding: 0;
+            border-bottom: none;
+        }
+
+        .newsletter-section {
+            display: flex;
+            justify-content: flex-end;
+        }
+
         .newsletter-panel {
-            position: absolute;
-            right: 4.25rem;
-            bottom: 8%;
             background: #c0392b;
             padding: 24px 36px;
             width: 560px;
-            max-width: 90%;
+            max-width: 100%;
         }
 
         .newsletter-title {
