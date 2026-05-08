@@ -79,11 +79,8 @@
          padding: 10px 0;
        }
        
-       .brand {
-         font-size: 13px;
-         font-weight: 500;
-         color: #5a2ca0;
-         text-decoration: none;
+       #Logo {
+         object-position: left top;
        }
        
        .nav-links {
