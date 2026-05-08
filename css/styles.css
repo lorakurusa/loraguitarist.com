@@ -80,7 +80,15 @@
        }
        
        #Logo {
-         object-position: left top;
+         position: absolute;
+         top: 12px;
+         left: 20px;
+         z-index: 1001;
+       }
+
+       #Logo img {
+         height: 70px;
+         width: auto;
        }
        
        .nav-links {
