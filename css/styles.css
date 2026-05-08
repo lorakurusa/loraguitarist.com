@@ -60,21 +60,23 @@
          /* ===== CLEAN NAVBAR (FINAL) ===== */
 
        .site-header {
-         position: absolute;
+         position: fixed;
          top: 0;
          left: 0;
-         width: 100%;
+         width: 100vw;
          background: transparent;
          z-index: 1000;
+         margin: 0;
        }
 
        .nav {
          display: flex;
+         justify-content: center;
          align-items: center;
          border-top: 2px solid #fff;
          border-bottom: 2px solid #fff;
          background-color: transparent;
-         padding: 8px 20px;
+         padding: 8px 0;
          width: 100%;
        }
 
