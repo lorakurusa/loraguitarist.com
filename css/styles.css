@@ -131,27 +131,18 @@
          letter-spacing: 0.08em;
          color: white;
          text-decoration: none;
-         position: relative;
-         transition: 0.3s;
        }
-       
-       .nav-links a:hover {
-         color: black;
+
+       .nav-links li:last-child a {
+         padding: 8px 20px;
+         border: 2px solid #7a9e6e;
+         color: white;
+         transition: background 0.25s, color 0.25s;
        }
-       
-       .nav-links a::after {
-         content: "";
-         position: absolute;
-         left: 0;
-         bottom: -4px;
-         width: 0%;
-         height: 1px;
-         background: black;
-         transition: 0.3s;
-       }
-       
-       .nav-links a:hover::after {
-         width: 100%;
+
+       .nav-links li:last-child a:hover {
+         background: #7a9e6e;
+         color: #fff;
        }
         /* Header Section */
        header#home {
