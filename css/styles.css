@@ -339,20 +339,20 @@
         /* Reviews Section */
         #reviews {
             background-color: #faf5ef;
-            padding: 80px 0;
+            padding: 50px 0;
         }
 
         .reviews-title {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 24px;
             color: #2c1a0e;
             font-family: 'Cormorant Garamond', serif;
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
 
         .reviews-slideshow {
             position: relative;
-            max-width: 620px;
+            max-width: 560px;
             margin: 0 auto;
             overflow: hidden;
         }
@@ -364,7 +364,7 @@
 
         .review-card {
             min-width: 100%;
-            padding: 28px 40px;
+            padding: 16px 32px;
             box-sizing: border-box;
             text-align: center;
         }
@@ -373,19 +373,19 @@
             content: '\201C';
             display: block;
             font-family: 'Cormorant Garamond', serif;
-            font-size: 5rem;
+            font-size: 3.5rem;
             color: #7a9e6e;
             line-height: 1;
-            margin-bottom: -16px;
+            margin-bottom: -10px;
         }
 
         .review-card p {
             font-family: 'Cormorant Garamond', serif;
             color: #3d2410;
-            font-size: 1.05rem;
-            line-height: 1.9;
+            font-size: 1rem;
+            line-height: 1.7;
             font-style: italic;
-            margin-bottom: 32px;
+            margin-bottom: 16px;
         }
 
         .review-author {
@@ -416,7 +416,7 @@
             justify-content: center;
             align-items: center;
             gap: 20px;
-            margin-top: 40px;
+            margin-top: 20px;
         }
 
         .reviews-arrow {
