@@ -66,29 +66,27 @@
          width: 100%;
          background: transparent;
          z-index: 1000;
-         padding: 18px 40px;
        }
 
        .nav {
          display: flex;
-         justify-content: space-between;
          align-items: center;
-         border-top: 2px solid #fff;    /* White line on top */
-         border-bottom: 2px solid #fff; /* White line on bottom */
-         background-color: #333;       /* Example background for contrast */
-         padding: 10px 0;
+         border-top: 2px solid #fff;
+         border-bottom: 2px solid #fff;
+         background-color: transparent;
+         padding: 8px 20px;
+         width: 100%;
        }
-       
+
        #Logo {
-         position: absolute;
-         top: 12px;
-         left: 20px;
-         z-index: 1001;
+         flex-shrink: 0;
+         margin-right: 16px;
        }
 
        #Logo img {
-         height: 70px;
+         height: 35px;
          width: auto;
+         display: block;
        }
        
        .nav-links {
@@ -97,7 +95,7 @@
          list-style: none;
          margin: 0;
          padding: 0;
-         margin-left: auto;
+         margin-left: 0;
        }
        
        .nav-links a {
