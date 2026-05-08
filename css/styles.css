@@ -460,7 +460,7 @@
 
         /* Info Section */
         #info {
-            background-color: #f5ede3;
+            background-color: #2c1a0e;
             padding: 80px 0;
         }
 
@@ -469,7 +469,7 @@
             font-family: 'Cormorant Garamond', serif;
             font-size: 2.6rem;
             font-weight: 400;
-            color: #2c1a0e;
+            color: #f5ede3;
             margin-bottom: 10px;
         }
 
@@ -477,7 +477,7 @@
             text-align: center;
             font-family: 'Poppins', sans-serif;
             font-size: 0.85rem;
-            color: #9a7a60;
+            color: #b89c84;
             max-width: 500px;
             margin: 0 auto 48px;
             line-height: 1.7;
@@ -494,7 +494,7 @@
             border: 1.5px solid #7a9e6e;
             padding: 36px 24px 30px;
             text-align: center;
-            background: #faf5ef;
+            background: rgba(255,255,255,0.05);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -505,7 +505,7 @@
 
         .lesson-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 16px 40px rgba(44, 26, 14, 0.12);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.3);
         }
 
         .lesson-card-icon {
@@ -520,7 +520,7 @@
             font-weight: 600;
             letter-spacing: 0.2em;
             text-transform: uppercase;
-            color: #2c1a0e;
+            color: #f5ede3;
         }
 
         .lesson-card-price {
@@ -542,7 +542,7 @@
             display: flex;
             gap: 60px;
             align-items: flex-start;
-            border-top: 1px solid #eee;
+            border-top: 1px solid #3d2c1a;
             padding-top: 40px;
         }
 
@@ -558,7 +558,7 @@
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.15rem;
             font-style: italic;
-            color: #2c1a0e;
+            color: #f5ede3;
             border-left: 3px solid #7a9e6e;
             padding-left: 16px;
             margin: 0;
@@ -567,7 +567,7 @@
         .info-body {
             font-family: 'Poppins', sans-serif;
             font-size: 0.85rem;
-            color: #6b5044;
+            color: #b89c84;
             line-height: 1.8;
             margin: 0;
         }
@@ -590,11 +590,11 @@
         .info-detail-value {
             font-family: 'Poppins', sans-serif;
             font-size: 0.83rem;
-            color: #6b5044;
+            color: #b89c84;
         }
 
         .info-free-lesson {
-            background: #faf5ef;
+            background: rgba(255,255,255,0.05);
             border: 1.5px solid #7a9e6e;
             padding: 18px 20px;
         }
@@ -613,7 +613,7 @@
         .info-free-lesson p {
             font-family: 'Poppins', sans-serif;
             font-size: 0.82rem;
-            color: #6b5044;
+            color: #b89c84;
             line-height: 1.7;
             margin: 0;
         }
