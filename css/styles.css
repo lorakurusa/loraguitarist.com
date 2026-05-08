@@ -79,11 +79,9 @@
        }
 
        .nav-socials {
-         flex: 1;
          display: flex;
          gap: 16px;
          align-items: center;
-         justify-content: flex-end;
        }
 
        .nav-socials a,
@@ -98,10 +96,6 @@
          opacity: 0.7;
        }
 
-       #Logo {
-         flex: 0;
-       }
-
        #Logo img {
          height: 260px;
          width: auto;
@@ -109,9 +103,8 @@
        }
 
        nav {
-         flex: 1;
          display: flex;
-         justify-content: flex-start;
+         justify-content: flex-end;
        }
 
        .hamburger {
