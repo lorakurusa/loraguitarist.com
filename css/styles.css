@@ -494,7 +494,7 @@
             border: 1.5px solid #7a9e6e;
             padding: 36px 24px 30px;
             text-align: center;
-            background: rgba(255,255,255,0.05);
+            background: #f5ede3;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -520,7 +520,7 @@
             font-weight: 600;
             letter-spacing: 0.2em;
             text-transform: uppercase;
-            color: #f5ede3;
+            color: #2c1a0e;
         }
 
         .lesson-card-price {
@@ -533,7 +533,7 @@
 
         .lesson-card-desc {
             font-size: 0.82rem;
-            color: #9a7a60;
+            color: #6b5044;
             font-style: italic;
             margin: 0;
         }
@@ -594,7 +594,7 @@
         }
 
         .info-free-lesson {
-            background: rgba(255,255,255,0.05);
+            background: #f5ede3;
             border: 1.5px solid #7a9e6e;
             padding: 18px 20px;
         }
@@ -613,7 +613,7 @@
         .info-free-lesson p {
             font-family: 'Poppins', sans-serif;
             font-size: 0.82rem;
-            color: #b89c84;
+            color: #6b5044;
             line-height: 1.7;
             margin: 0;
         }
