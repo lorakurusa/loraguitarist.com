@@ -153,26 +153,19 @@
         /* Header Section */
        header#home {
          position: relative;
+         background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/IMG_7634.jpg');
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
          color: white;
          text-align: center;
-         overflow: visible;
-}
-
-       .hero-img {
-         display: block;
-         width: 100%;
-         height: 100vh;
-         object-fit: contain;
-         object-position: center top;
-         background: #000;
+         padding: 100px 0;
+         min-height: 70vh;
 }
                
         .header-content {
-            position: absolute;
-            bottom: 10%;
-            left: 50%;
-            transform: translateX(-50%);
             max-width: 800px;
+            margin: 0 auto;
         }
         
         .header-content h1 {
