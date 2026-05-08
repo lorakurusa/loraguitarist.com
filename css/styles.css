@@ -157,7 +157,6 @@
          position: relative;
          color: white;
          text-align: center;
-         overflow: hidden;
 }
 
        .hero-img {
@@ -747,10 +746,6 @@
        
          .header-content h1 {
            font-size: 2.5rem;
-         }
-       
-         header#home {
-           background-position: left;
          }
        
          .site-header {
