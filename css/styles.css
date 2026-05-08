@@ -346,7 +346,7 @@
             text-align: center;
             margin-bottom: 50px;
             color: #2c1a0e;
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: 2rem;
         }
 
@@ -372,7 +372,7 @@
         .review-card::before {
             content: '\201C';
             display: block;
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: 5rem;
             color: #7a9e6e;
             line-height: 1;
@@ -380,7 +380,7 @@
         }
 
         .review-card p {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             color: #3d2410;
             font-size: 1.05rem;
             line-height: 1.9;
