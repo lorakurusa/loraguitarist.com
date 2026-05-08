@@ -131,16 +131,12 @@
          letter-spacing: 0.08em;
          color: white;
          text-decoration: none;
-       }
-
-       .nav-links li:last-child a {
          padding: 8px 20px;
          border: 2px solid #7a9e6e;
-         color: white;
          transition: background 0.25s, color 0.25s;
        }
 
-       .nav-links li:last-child a:hover {
+       .nav-links a:hover {
          background: #7a9e6e;
          color: #fff;
        }
