@@ -382,8 +382,8 @@
         .review-card p {
             font-family: 'Cormorant Garamond', serif;
             color: #3d2410;
-            font-size: 1rem;
-            line-height: 1.7;
+            font-size: 1.25rem;
+            line-height: 1.75;
             font-style: italic;
             margin-bottom: 16px;
         }
