@@ -83,18 +83,23 @@
          display: flex;
          gap: 16px;
          align-items: center;
+         justify-content: flex-end;
        }
 
        .nav-socials a,
        .nav-socials a i {
          color: white !important;
-         font-size: 20px;
+         font-size: 28px;
          text-decoration: none;
          transition: opacity 0.3s;
        }
 
        .nav-socials a:hover {
          opacity: 0.7;
+       }
+
+       #Logo {
+         flex: 0;
        }
 
        #Logo img {
@@ -106,7 +111,7 @@
        nav {
          flex: 1;
          display: flex;
-         justify-content: flex-end;
+         justify-content: flex-start;
        }
 
        .hamburger {
