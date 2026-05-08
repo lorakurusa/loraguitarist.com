@@ -151,20 +151,23 @@
         /* Header Section */
        header#home {
          position: relative;
-         background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/IMG_7634.jpg');
-         background-size: 100% 100%;
-         background-position: center;
-         background-repeat: no-repeat;
          color: white;
          text-align: center;
-         padding: 100px 0;
-         aspect-ratio: 1920 / 1078;
-         min-height: unset;
+         overflow: hidden;
+}
+
+       .hero-img {
+         display: block;
+         width: 100%;
+         height: auto;
 }
                
         .header-content {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
             max-width: 800px;
-            margin: 0 auto;
         }
         
         .header-content h1 {
