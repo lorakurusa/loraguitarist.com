@@ -60,13 +60,9 @@
          /* ===== CLEAN NAVBAR (FINAL) ===== */
 
        .site-header {
-         position: absolute;
-         top: 0;
-         left: 0;
          width: 100%;
          background: transparent;
          z-index: 1000;
-         margin: 0;
        }
 
        .nav {
@@ -157,6 +153,7 @@
        }
         /* Header Section */
        header#home {
+         position: relative;
          background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/firstphoto.jpg');
          background-size: cover;
          background-position: center;
