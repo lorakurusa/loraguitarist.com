@@ -75,7 +75,7 @@
          align-items: center;
          border-bottom: 2px solid #fff;
          background-color: transparent;
-         padding: 12px 10px;
+         padding: 12px 4.25rem;
          width: 100%;
        }
 
@@ -101,6 +101,12 @@
 
        .nav-socials a:hover {
          opacity: 0.7;
+       }
+
+       #Logo {
+         position: absolute;
+         left: 145px;
+         top: 0;
        }
 
        #Logo img {
