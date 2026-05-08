@@ -189,7 +189,7 @@
         .newsletter-panel {
             position: absolute;
             right: 0;
-            bottom: 0;
+            top: 62%;
             background: #2c1a0e;
             padding: 18px 29px;
             width: 504px;
