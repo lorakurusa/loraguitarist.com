@@ -97,12 +97,6 @@
          opacity: 0.7;
        }
 
-       #Logo {
-         flex: 1;
-         display: flex;
-         justify-content: center;
-       }
-
        #Logo img {
          height: 260px;
          width: auto;
