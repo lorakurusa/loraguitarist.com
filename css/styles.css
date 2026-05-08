@@ -71,7 +71,7 @@
          align-items: center;
          border-bottom: 2px solid #fff;
          background-color: transparent;
-         padding: 8px 20px;
+         padding: 4px 20px;
          width: 100%;
        }
 
@@ -85,7 +85,7 @@
        .nav-socials a,
        .nav-socials a i {
          color: white !important;
-         font-size: 22px;
+         font-size: 28px;
          text-decoration: none;
          transition: opacity 0.3s;
        }
@@ -101,7 +101,7 @@
        }
 
        #Logo img {
-         height: 150px;
+         height: 180px;
          width: auto;
          display: block;
        }
