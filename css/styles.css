@@ -325,6 +325,10 @@
             object-position: center 20%;
             display: block;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            image-rendering: -webkit-optimize-contrast;
+            transform: translateZ(0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
         }
         
         /* Videos Section */
