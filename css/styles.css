@@ -285,7 +285,10 @@
         }
         
         .about-title {
-            text-align: center;;
+            text-align: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            color: #2c1a0e;
         }
 
         .about-content {
@@ -319,7 +322,7 @@
         .videos-title {
             font-family: 'Cormorant Garamond', serif;
             font-size: 2.4rem;
-            font-weight: 400;
+            font-weight: 600;
             color: #2c1a0e;
             margin-bottom: 10px;
         }
@@ -393,6 +396,7 @@
             color: #2c1a0e;
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.8rem;
+            font-weight: 600;
         }
 
         .reviews-slideshow {
@@ -517,7 +521,7 @@
             text-align: center;
             font-family: 'Cormorant Garamond', serif;
             font-size: 2.6rem;
-            font-weight: 400;
+            font-weight: 600;
             color: #2c1a0e;
             margin-bottom: 10px;
         }
@@ -736,7 +740,7 @@
         #contact h2 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 2.4rem;
-            font-weight: 400;
+            font-weight: 600;
             color: #2c1a0e;
             margin-bottom: 8px;
         }
@@ -765,7 +769,7 @@
         .performances-title {
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.6rem;
-            font-weight: 400;
+            font-weight: 600;
             color: #2c1a0e;
             margin-bottom: 24px;
             padding-bottom: 12px;
