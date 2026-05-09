@@ -281,14 +281,18 @@
         
         /* About Section */
         #about {
-            background-color: white;
+            background-color: #faf5ef;
         }
-        
+
         .about-title {
             text-align: center;
             font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
             font-weight: 600;
+            font-style: italic;
             color: #2c1a0e;
+            margin-bottom: 36px;
+            line-height: 1.6;
         }
 
         .about-content {
@@ -296,10 +300,17 @@
             align-items: center;
             gap: 40px;
         }
-        
+
         .about-text {
             flex: 2;
-            text-align: center;;
+            text-align: left;
+        }
+
+        .about-text p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.88rem;
+            color: #4a3020;
+            line-height: 1.9;
         }
         
         .about-image {
