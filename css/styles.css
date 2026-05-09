@@ -755,7 +755,7 @@
         .contact-layout {
             display: flex;
             gap: 40px;
-            align-items: flex-start;
+            align-items: stretch;
             text-align: left;
         }
 
