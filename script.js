@@ -34,3 +34,41 @@
 
     resetTimer();
 })();
+
+// Music carousel
+(function () {
+    const cards = document.querySelectorAll('.music-card');
+    if (!cards.length) return;
+    let current = 0;
+
+    function update() {
+        cards.forEach((card, i) => {
+            card.classList.remove('active', 'prev', 'next');
+            const offset = (i - current + cards.length) % cards.length;
+            if (offset === 0) card.classList.add('active');
+            else if (offset === cards.length - 1) card.classList.add('prev');
+            else if (offset === 1) card.classList.add('next');
+        });
+    }
+
+    document.getElementById('musicPrev').addEventListener('click', () => {
+        current = (current - 1 + cards.length) % cards.length;
+        update();
+    });
+
+    document.getElementById('musicNext').addEventListener('click', () => {
+        current = (current + 1) % cards.length;
+        update();
+    });
+
+    cards.forEach((card, i) => {
+        card.addEventListener('click', () => {
+            if (!card.classList.contains('active')) {
+                current = i;
+                update();
+            }
+        });
+    });
+
+    update();
+})();
