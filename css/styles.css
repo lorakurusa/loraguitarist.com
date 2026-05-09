@@ -1112,7 +1112,12 @@
         }
         
         /* Footer */
-        /* Contact form aesthetic overrides */
+        .fs-description {
+            font-family: 'Poppins', sans-serif !important;
+            font-size: 0.78rem !important;
+            font-style: italic !important;
+            color: #9a7a60 !important;
+        }
         .fs-label {
             font-family: 'Poppins', sans-serif !important;
             font-size: 0.72rem !important;
