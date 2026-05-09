@@ -601,6 +601,8 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            max-width: 680px;
+            margin: 0 auto;
         }
 
         .info-location {
