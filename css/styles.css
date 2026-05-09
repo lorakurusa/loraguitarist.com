@@ -669,6 +669,30 @@
             margin: 0;
         }
 
+        .lessons-photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 48px;
+        }
+
+        .lessons-photo-item {
+            overflow: hidden;
+            border: 1.5px solid #7a9e6e;
+        }
+
+        .lessons-photo-item img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .lessons-photo-item:hover img {
+            transform: scale(1.04);
+        }
+
         .info-text li {
             list-style-type: none;
             text-align: left;
