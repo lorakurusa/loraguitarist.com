@@ -258,34 +258,18 @@
             <h2>Get In Touch</h2>
             <p>For booking inquiries, collaborations, or just to say hello</p>
             <div class="contact-form">
-                <form
-                    action="https://formspree.io/f/xwvyakqy"
-                    class="fs-form"
-                    target="_top"
-                    method="POST"
-                >
+                <form action="https://formspree.io/f/xwvyakqy" method="POST" class="fs-form">
                     <div class="fs-field">
-                        <label class="fs-label" for="name">Your Name</label>
-                        <input class="fs-input" id="name" name="name" required />
+                        <label class="fs-label" for="email">Your email</label>
+                        <input class="fs-input" type="email" name="email" id="email" required />
                     </div>
                     <div class="fs-field">
-                        <label class="fs-label" for="email">Email</label>
-                        <input class="fs-input" id="email" name="email" required />
-                        <p class="fs-description">
-                        </p>
-                    </div>
-                    <div class="fs-field">
-                        <label class="fs-label" for="message">Message</label>
-                        <textarea
-                        class="fs-textarea"
-                        id="message"
-                        name="message"
-                        required
-                        ></textarea>
+                        <label class="fs-label" for="message">Your message</label>
+                        <textarea class="fs-textarea" name="message" id="message" required></textarea>
                         <p class="fs-description">What would you like to discuss?</p>
                     </div>
                     <div class="fs-button-group">
-                        <button class="fs-button" type="submit">Submit</button>
+                        <button class="fs-button" type="submit">Send</button>
                     </div>
                 </form>
             </div>
