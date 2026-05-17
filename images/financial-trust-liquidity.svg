@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" width="3200" height="1200" font-family="'Segoe UI', Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1600" height="600" fill="white"/>
+
+  <!-- Connector lines left side -->
+  <!-- Vertical spine left -->
+  <line x1="430" y1="80" x2="430" y2="500" stroke="#E8A020" stroke-width="2.5"/>
+  <!-- Horizontal connectors left to center -->
+  <line x1="430" y1="80"  x2="680" y2="80"  stroke="#E8A020" stroke-width="2.5"/>
+  <line x1="430" y1="200" x2="680" y2="200" stroke="#E8A020" stroke-width="2.5"/>
+  <line x1="430" y1="320" x2="680" y2="320" stroke="#E8A020" stroke-width="2.5"/>
+  <line x1="430" y1="500" x2="680" y2="500" stroke="#E8A020" stroke-width="2.5"/>
+  <!-- Center vertical join left -->
+  <line x1="680" y1="80" x2="680" y2="500" stroke="#E8A020" stroke-width="2.5"/>
+  <!-- Center oval connect left -->
+  <line x1="680" y1="300" x2="730" y2="300" stroke="#E8A020" stroke-width="2.5"/>
+
+  <!-- Connector lines right side -->
+  <!-- Vertical spine right -->
+  <line x1="1170" y1="80" x2="1170" y2="500" stroke="#E8A020" stroke-width="2.5"/>
+  <!-- Horizontal connectors right to center -->
+  <line x1="920" y1="80"  x2="1170" y2="80"  stroke="#E8A020" stroke-width="2.5"/>
+  <line x1="920" y1="200" x2="1170" y2="200" stroke="#E8A020" stroke-width="2.5"/>
+  <line x1="920" y1="320" x2="1170" y2="320" stroke="#E8A020" stroke-width="2.5"/>
+  <line x1="920" y1="500" x2="1170" y2="500" stroke="#E8A020" stroke-width="2.5"/>
+  <!-- Center vertical join right -->
+  <line x1="920" y1="80" x2="920" y2="500" stroke="#E8A020" stroke-width="2.5"/>
+  <!-- Center oval connect right -->
+  <line x1="870" y1="300" x2="920" y2="300" stroke="#E8A020" stroke-width="2.5"/>
+
+  <!-- Center ellipse -->
+  <ellipse cx="800" cy="300" rx="140" ry="80" fill="#F0A830"/>
+  <text x="800" y="288" text-anchor="middle" font-size="22" font-weight="bold" fill="white">Financial Trust</text>
+  <text x="800" y="316" text-anchor="middle" font-size="22" font-weight="bold" fill="white">&amp; Liquidity</text>
+
+  <!-- LEFT BOX 1: The Enterprise Oracle -->
+  <rect x="30" y="44" width="390" height="72" rx="10" fill="#D95F20"/>
+  <text x="225" y="87" text-anchor="middle" font-size="21" font-weight="bold" fill="white">The Enterprise Oracle</text>
+
+  <!-- LEFT BOX 2: Centralises financial data -->
+  <rect x="30" y="162" width="390" height="76" rx="10" fill="#D95F20"/>
+  <text x="225" y="192" text-anchor="middle" font-size="20" font-weight="bold" fill="white">Centralises financial data</text>
+  <text x="225" y="220" text-anchor="middle" font-size="17" fill="#FDDBB0">Single source of truth for CFOs</text>
+
+  <!-- LEFT BOX 3: AI fraud detection -->
+  <rect x="30" y="282" width="390" height="76" rx="10" fill="#D95F20"/>
+  <!-- Apr 2026 tag -->
+  <rect x="175" y="276" width="100" height="24" rx="4" fill="#3a1a00"/>
+  <text x="225" y="293" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Apr 2026</text>
+  <text x="225" y="314" text-anchor="middle" font-size="20" font-weight="bold" fill="white">AI fraud detection</text>
+  <text x="225" y="342" text-anchor="middle" font-size="17" fill="#FDDBB0">Lucinity automates investigations</text>
+
+  <!-- LEFT BOX 4: Outage risk -->
+  <rect x="30" y="462" width="390" height="76" rx="10" fill="#D95F20"/>
+  <text x="225" y="492" text-anchor="middle" font-size="20" font-weight="bold" fill="white">Outage risk</text>
+  <text x="225" y="520" text-anchor="middle" font-size="17" fill="#FDDBB0">One crash, everything stops</text>
+
+  <!-- RIGHT BOX 1: Blockchain Oracle -->
+  <rect x="1180" y="44" width="390" height="72" rx="10" fill="#D95F20"/>
+  <text x="1375" y="87" text-anchor="middle" font-size="21" font-weight="bold" fill="white">Blockchain Oracle</text>
+
+  <!-- RIGHT BOX 2: Feeds real prices to DeFi -->
+  <rect x="1180" y="162" width="390" height="76" rx="10" fill="#D95F20"/>
+  <text x="1375" y="192" text-anchor="middle" font-size="20" font-weight="bold" fill="white">Feeds real prices to DeFi</text>
+  <text x="1375" y="220" text-anchor="middle" font-size="17" fill="#FDDBB0">Protocols act on live data</text>
+
+  <!-- RIGHT BOX 3: TWAP + Security Modules -->
+  <rect x="1180" y="282" width="390" height="76" rx="10" fill="#D95F20"/>
+  <text x="1375" y="312" text-anchor="middle" font-size="20" font-weight="bold" fill="white">TWAP + Security Modules</text>
+  <text x="1375" y="340" text-anchor="middle" font-size="17" fill="#FDDBB0">Averages prices, reduces risk</text>
+
+  <!-- RIGHT BOX 4: Flash loan attack -->
+  <rect x="1180" y="462" width="390" height="76" rx="10" fill="#D95F20"/>
+  <text x="1375" y="492" text-anchor="middle" font-size="20" font-weight="bold" fill="white">Flash loan attack</text>
+  <text x="1375" y="520" text-anchor="middle" font-size="17" fill="#FDDBB0">Fakes price, triggers liquidations</text>
+</svg>
