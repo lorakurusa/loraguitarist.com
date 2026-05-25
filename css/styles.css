@@ -912,14 +912,15 @@
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.08rem;
             font-style: italic;
-            color: #2c1a0e;
+            color: #f5ede3;
             line-height: 1.3;
         }
 
         .perf-location {
             font-family: 'Poppins', sans-serif;
             font-size: 0.68rem;
-            color: #6b5044;
+            color: #f5ede3;
+            opacity: 0.75;
         }
 
         .performances-note {
@@ -933,7 +934,7 @@
         }
 
         #performances {
-            background-color: #f2f0ec;
+            background-color: #7a9e6e;
             padding: 80px 0;
             text-align: center;
         }
@@ -942,14 +943,15 @@
             font-family: 'Cormorant Garamond', serif;
             font-size: 2.4rem;
             font-weight: 600;
-            color: #2c1a0e;
+            color: #f5ede3;
             margin-bottom: 8px;
         }
 
         .performances-section-subtitle {
             font-family: 'Poppins', sans-serif;
             font-size: 0.85rem;
-            color: #6b5044;
+            color: #f5ede3;
+            opacity: 0.8;
             margin-bottom: 40px;
         }
 
