@@ -859,8 +859,11 @@
 
         .performance-item {
             display: flex;
-            gap: 18px;
-            align-items: center;
+            gap: 24px;
+            align-items: flex-start;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1.5px solid rgba(245, 237, 227, 0.25);
+            padding: 24px 28px;
         }
 
         .perf-cal-tile {
