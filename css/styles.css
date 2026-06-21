@@ -923,6 +923,45 @@
             opacity: 0.75;
         }
 
+        .perf-desc {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.75rem;
+            color: #f5ede3;
+            opacity: 0.85;
+            line-height: 1.6;
+            margin-top: 4px;
+        }
+
+        .perf-ticket {
+            display: inline-block;
+            margin-top: 8px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #f5ede3;
+            border: 1.5px solid #f5ede3;
+            padding: 5px 14px;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .perf-ticket:hover {
+            background: #f5ede3;
+            color: #2c1a0e;
+        }
+
+        .perf-ticket-soon {
+            display: inline-block;
+            margin-top: 8px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.65rem;
+            font-style: italic;
+            color: #f5ede3;
+            opacity: 0.55;
+        }
+
         .performances-note {
             font-family: 'Poppins', sans-serif;
             font-size: 0.7rem;
