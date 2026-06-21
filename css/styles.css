@@ -317,17 +317,83 @@
 
         .about-image {
             flex: 1;
+            position: relative;
         }
 
-        .about-image img {
+        .about-slideshow {
+            position: relative;
+            width: 100%;
+            height: 520px;
+            overflow: hidden;
+        }
+
+        .about-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 0.7s ease;
+        }
+
+        .about-slide.active {
+            opacity: 1;
+        }
+
+        .about-slide img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center 68%;
+            object-position: center 40%;
             display: block;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             image-rendering: auto;
-            filter: none;
+        }
+
+        .about-slide-prev,
+        .about-slide-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(44, 26, 14, 0.5);
+            border: 1.5px solid rgba(245, 237, 227, 0.5);
+            color: #f5ede3;
+            font-size: 1rem;
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            z-index: 5;
+            transition: background 0.2s;
+        }
+
+        .about-slide-prev:hover,
+        .about-slide-next:hover {
+            background: rgba(44, 26, 14, 0.8);
+        }
+
+        .about-slide-prev { left: 10px; }
+        .about-slide-next { right: 10px; }
+
+        .about-slide-dots {
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 6px;
+            z-index: 5;
+        }
+
+        .about-slide-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: rgba(245, 237, 227, 0.4);
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+            padding: 0;
+        }
+
+        .about-slide-dot.active {
+            background: #f5ede3;
         }
         
         /* Videos Section */
