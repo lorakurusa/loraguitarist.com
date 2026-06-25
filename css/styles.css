@@ -1117,12 +1117,52 @@
         }
 
         .performances-list--large {
-            max-width: 680px;
-            margin: 0 auto;
+            max-width: 100%;
+            margin: 0;
             text-align: left;
             display: flex;
             flex-direction: column;
-            gap: 32px;
+            gap: 24px;
+        }
+
+        .perf-split {
+            display: flex;
+            gap: 48px;
+            align-items: flex-start;
+        }
+
+        .perf-split-left {
+            flex: 1 1 55%;
+            min-width: 0;
+            text-align: left;
+        }
+
+        .perf-split-left .performances-section-title,
+        .perf-split-left .performances-section-subtitle {
+            text-align: left;
+        }
+
+        .perf-split-right {
+            flex: 0 0 38%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-top: 8px;
+        }
+
+        .perf-photo-placeholder {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            background: rgba(255,255,255,0.07);
+            border: 1.5px solid rgba(245,237,227,0.25);
+            overflow: hidden;
+        }
+
+        .perf-photo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .info-layout {
