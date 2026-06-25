@@ -117,26 +117,30 @@
 
        .nav-links {
          display: flex;
-         gap: 22px;
+         gap: 10px;
          list-style: none;
          margin: 0;
          padding: 0;
-       }
-       
-       .nav-links a {
-         font-family: 'Poppins', sans-serif;
-         font-weight: 500;
-         font-size: 15px;
-         text-transform: uppercase;
-         letter-spacing: 0.08em;
-         color: white;
-         text-decoration: none;
-         padding: 8px 20px;
-         border: 2px solid #7a9e6e;
-         transition: background 0.25s, color 0.25s;
+         align-items: center;
+         flex-wrap: nowrap;
        }
 
-       .nav-links a:hover {
+       .nav-links > li > a {
+         font-family: 'Poppins', sans-serif;
+         font-weight: 500;
+         font-size: 12px;
+         text-transform: uppercase;
+         letter-spacing: 0.07em;
+         color: white;
+         text-decoration: none;
+         padding: 6px 14px;
+         border: 1.5px solid #7a9e6e;
+         transition: background 0.25s, color 0.25s;
+         white-space: nowrap;
+         display: block;
+       }
+
+       .nav-links > li > a:hover {
          background: #7a9e6e;
          color: #fff;
        }
@@ -148,14 +152,14 @@
        .nav-dropdown-menu {
          display: none;
          position: absolute;
-         top: calc(100% + 6px);
+         top: calc(100% + 4px);
          left: 0;
          list-style: none;
          margin: 0;
-         padding: 6px 0;
+         padding: 4px 0;
          background: #2c1a0e;
          border: 1.5px solid #7a9e6e;
-         min-width: 160px;
+         min-width: 150px;
          z-index: 200;
        }
 
@@ -166,14 +170,15 @@
        .nav-dropdown-menu li a {
          display: block;
          font-family: 'Poppins', sans-serif;
-         font-size: 13px;
+         font-size: 11px;
          font-weight: 500;
          text-transform: uppercase;
-         letter-spacing: 0.08em;
+         letter-spacing: 0.07em;
          color: #f5ede3;
          text-decoration: none;
-         padding: 9px 18px;
+         padding: 8px 16px;
          border: none;
+         white-space: nowrap;
          transition: background 0.2s, color 0.2s;
        }
 
