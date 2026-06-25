@@ -1226,6 +1226,8 @@
         .pcal-block {
             background: #fff;
             padding: 22px 20px 20px;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .pcal-month {
@@ -1263,7 +1265,9 @@
             font-size: 0.65rem;
             color: #7a6a5a;
             text-align: center;
-            padding: 4px 2px;
+            padding: 5px 2px;
+            height: 28px;
+            box-sizing: border-box;
             position: relative;
             line-height: 1.2;
         }
