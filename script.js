@@ -135,7 +135,7 @@
         const container = document.getElementById('perfCalendar');
         if (!container) return;
 
-        // Group events by year-month
+        // Index events by year-month key
         const byMonth = {};
         PERFORMANCES.forEach(ev => {
             const { year, month, day } = parseDate(ev.date);
@@ -145,30 +145,40 @@
             byMonth[key].days.add(day);
         });
 
-        const keys = Object.keys(byMonth).sort();
+        // Always show current month + next 2 months rolling
+        const now = new Date();
         let html = '';
+        for (let i = 0; i < 3; i++) {
+            const d = new Date(now.getFullYear(), now.getMonth() + i, 1);
+            const year = d.getFullYear();
+            const month = d.getMonth() + 1;
+            const key = `${year}-${String(month).padStart(2,'0')}`;
+            const monthData = byMonth[key] || { year, month, events: [], days: new Set() };
 
-        keys.forEach(key => {
-            const { year, month, events, days } = byMonth[key];
             html += `<div class="pcal-block">`;
-            html += renderMonth(year, month, days);
-            html += `<ul class="pcal-event-list">`;
-            events.forEach(ev => {
-                html += `<li class="pcal-event-item">`;
-                html += `<div class="pcal-event-date">${String(ev.day).padStart(2,'0')} ${MONTH_NAMES[month-1].slice(0,3).toUpperCase()}</div>`;
-                html += `<div class="pcal-event-info">`;
-                html += `<span class="pcal-event-title">${ev.title}</span>`;
-                html += `<span class="pcal-event-location">${ev.location}</span>`;
-                html += `<span class="pcal-event-desc">${ev.desc}</span>`;
-                if (ev.ticket) {
-                    html += `<a class="perf-ticket" href="${ev.ticket}" target="_blank">Buy Tickets</a>`;
-                } else {
-                    html += `<span class="perf-ticket-soon">Tickets coming soon</span>`;
-                }
-                html += `</div></li>`;
-            });
-            html += `</ul></div>`;
-        });
+            html += renderMonth(year, month, monthData.days);
+            if (monthData.events.length) {
+                html += `<ul class="pcal-event-list">`;
+                monthData.events.forEach(ev => {
+                    html += `<li class="pcal-event-item">`;
+                    html += `<div class="pcal-event-date">${String(ev.day).padStart(2,'0')} ${MONTH_NAMES[month-1].slice(0,3).toUpperCase()}</div>`;
+                    html += `<div class="pcal-event-info">`;
+                    html += `<span class="pcal-event-title">${ev.title}</span>`;
+                    html += `<span class="pcal-event-location">${ev.location}</span>`;
+                    html += `<span class="pcal-event-desc">${ev.desc}</span>`;
+                    if (ev.ticket) {
+                        html += `<a class="perf-ticket" href="${ev.ticket}" target="_blank">Buy Tickets</a>`;
+                    } else {
+                        html += `<span class="perf-ticket-soon">Tickets coming soon</span>`;
+                    }
+                    html += `</div></li>`;
+                });
+                html += `</ul>`;
+            } else {
+                html += `<p class="pcal-no-events">No events this month</p>`;
+            }
+            html += `</div>`;
+        }
 
         container.innerHTML = html;
     }
