@@ -1152,13 +1152,12 @@
 
         #perfCalendar {
             display: flex;
-            gap: 16px;
-            align-items: flex-start;
+            flex-direction: column;
+            gap: 24px;
         }
 
         /* --- Performances calendar grid --- */
         .pcal-block {
-            flex: 1;
             background: #fff;
             padding: 22px 20px 20px;
         }
