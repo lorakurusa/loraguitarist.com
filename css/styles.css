@@ -1140,12 +1140,12 @@
         }
 
         .perf-split-left {
-            flex: 0 0 42%;
+            flex: 1 1 50%;
             min-width: 0;
         }
 
         .perf-split-right {
-            flex: 1 1 52%;
+            flex: 1 1 50%;
             display: flex;
             flex-direction: column;
         }
