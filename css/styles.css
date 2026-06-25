@@ -1135,7 +1135,9 @@
 
         /* --- Performances calendar grid --- */
         .pcal-block {
-            margin-bottom: 36px;
+            background: #fff;
+            padding: 22px 20px 20px;
+            margin-bottom: 24px;
         }
 
         .pcal-month {
@@ -1148,7 +1150,7 @@
             font-weight: 600;
             letter-spacing: 0.15em;
             text-transform: uppercase;
-            color: #7a9e6e;
+            color: #4a6b42;
             margin-bottom: 10px;
         }
 
@@ -1162,7 +1164,7 @@
             font-family: 'Poppins', sans-serif;
             font-size: 0.6rem;
             font-weight: 600;
-            color: rgba(245,237,227,0.4);
+            color: #b89c84;
             text-align: center;
             letter-spacing: 0.05em;
             padding-bottom: 4px;
@@ -1171,7 +1173,7 @@
         .pcal-cell {
             font-family: 'Poppins', sans-serif;
             font-size: 0.65rem;
-            color: rgba(245,237,227,0.55);
+            color: #7a6a5a;
             text-align: center;
             padding: 4px 2px;
             position: relative;
@@ -1183,17 +1185,17 @@
         }
 
         .pcal-cell.pcal-event-day {
-            color: #f5ede3;
+            color: #fff;
             font-weight: 600;
-            background: rgba(122,158,110,0.2);
-            border: 1px solid rgba(122,158,110,0.5);
+            background: #4a6b42;
+            border: 1px solid #4a6b42;
         }
 
         .pcal-dot {
             display: block;
             width: 4px;
             height: 4px;
-            background: #7a9e6e;
+            background: #fff;
             border-radius: 50%;
             margin: 2px auto 0;
         }
@@ -1204,25 +1206,25 @@
             margin: 0;
             display: flex;
             flex-direction: column;
-            gap: 16px;
+            gap: 12px;
         }
 
         .pcal-event-item {
             display: flex;
-            gap: 16px;
+            gap: 14px;
             align-items: flex-start;
-            background: rgba(255,255,255,0.06);
-            border: 1.5px solid rgba(245,237,227,0.18);
-            padding: 16px 18px;
+            background: #f5ede3;
+            border-left: 3px solid #4a6b42;
+            padding: 12px 14px;
         }
 
         .pcal-event-date {
-            flex: 0 0 42px;
+            flex: 0 0 38px;
             font-family: 'Poppins', sans-serif;
-            font-size: 0.6rem;
+            font-size: 0.58rem;
             font-weight: 700;
             letter-spacing: 0.1em;
-            color: #7a9e6e;
+            color: #4a6b42;
             text-transform: uppercase;
             padding-top: 3px;
             line-height: 1.4;
@@ -1231,39 +1233,39 @@
         .pcal-event-info {
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 3px;
         }
 
         .pcal-event-title {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             font-weight: 600;
             font-style: italic;
-            color: #f5ede3;
+            color: #2c1a0e;
         }
 
         .pcal-event-location {
             font-family: 'Poppins', sans-serif;
-            font-size: 0.68rem;
-            color: rgba(245,237,227,0.7);
+            font-size: 0.65rem;
+            color: #6b5044;
             letter-spacing: 0.02em;
         }
 
         .pcal-event-desc {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 0.98rem;
+            font-size: 0.95rem;
             font-style: italic;
-            color: rgba(245,237,227,0.8);
+            color: #5a4535;
             margin-top: 2px;
         }
 
         .pcal-no-events {
             font-family: 'Poppins', sans-serif;
-            font-size: 0.68rem;
-            color: rgba(245,237,227,0.3);
+            font-size: 0.65rem;
+            color: #b89c84;
             font-style: italic;
             letter-spacing: 0.05em;
-            margin: 8px 0 0;
+            margin: 6px 0 0;
         }
 
         .perf-split-left {
