@@ -1145,9 +1145,75 @@
         }
 
         .perf-split-right {
-            flex: 0 0 40%;
+            flex: 0 0 38%;
             display: flex;
             flex-direction: column;
+        }
+
+        .insta-panel {
+            background: #fff;
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            box-sizing: border-box;
+        }
+
+        .insta-panel-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: #2c1a0e;
+            border-bottom: 1.5px solid #f2f0ec;
+            padding-bottom: 12px;
+        }
+
+        .insta-panel-header svg {
+            color: #4a6b42;
+            flex-shrink: 0;
+        }
+
+        .insta-feed-placeholder {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            background: #f2f0ec;
+            min-height: 200px;
+        }
+
+        .insta-feed-placeholder p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.7rem;
+            color: #b89c84;
+            font-style: italic;
+        }
+
+        .insta-follow-btn {
+            display: inline-block;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #fff;
+            background: #4a6b42;
+            border: 2px solid #4a6b42;
+            padding: 8px 20px;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .insta-follow-btn:hover {
+            background: #2c1a0e;
+            border-color: #2c1a0e;
         }
 
         #perfCalendar {
