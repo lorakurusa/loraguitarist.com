@@ -154,7 +154,7 @@
         const [startYear, startMonth] = startKey.split('-').map(Number);
 
         let html = '';
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 2; i++) {
             const d = new Date(startYear, startMonth - 1 + i, 1);
             const year = d.getFullYear();
             const month = d.getMonth() + 1;
