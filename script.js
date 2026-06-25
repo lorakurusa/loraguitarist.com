@@ -145,11 +145,17 @@
             byMonth[key].days.add(day);
         });
 
-        // Always show current month + next 2 months rolling
+        // Start from the earliest month that has events (or current month, whichever is later)
+        // then show 3 months from that starting point
         const now = new Date();
+        const nowKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2,'0')}`;
+        const futureKeys = Object.keys(byMonth).sort().filter(k => k >= nowKey);
+        const startKey = futureKeys.length ? futureKeys[0] : nowKey;
+        const [startYear, startMonth] = startKey.split('-').map(Number);
+
         let html = '';
         for (let i = 0; i < 3; i++) {
-            const d = new Date(now.getFullYear(), now.getMonth() + i, 1);
+            const d = new Date(startYear, startMonth - 1 + i, 1);
             const year = d.getFullYear();
             const month = d.getMonth() + 1;
             const key = `${year}-${String(month).padStart(2,'0')}`;
