@@ -128,12 +128,12 @@
        .nav-links > li > a {
          font-family: 'Poppins', sans-serif;
          font-weight: 500;
-         font-size: 12px;
+         font-size: 13.5px;
          text-transform: uppercase;
          letter-spacing: 0.07em;
          color: white;
          text-decoration: none;
-         padding: 6px 14px;
+         padding: 7px 16px;
          border: 1.5px solid #7a9e6e;
          transition: background 0.25s, color 0.25s;
          white-space: nowrap;
