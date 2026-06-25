@@ -1098,6 +1098,8 @@
             background-color: #4a6b42;
             padding: 80px 0;
             text-align: center;
+            border: 6px solid #f5ede3;
+            outline: 4px solid #7a9e6e;
         }
 
         .performances-section-title {
