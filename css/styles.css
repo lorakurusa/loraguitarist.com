@@ -1255,6 +1255,15 @@
             margin-top: 2px;
         }
 
+        .pcal-no-events {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.68rem;
+            color: rgba(245,237,227,0.3);
+            font-style: italic;
+            letter-spacing: 0.05em;
+            margin: 8px 0 0;
+        }
+
         .perf-split-left {
             flex: 1 1 55%;
             min-width: 0;
