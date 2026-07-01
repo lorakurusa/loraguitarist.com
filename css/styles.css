@@ -2020,30 +2020,158 @@
 
  /* Responsive Design */
        @media (max-width: 768px) {
-         .about-content {
+
+         /* --- NAV --- */
+         .site-header { padding: 12px 16px; }
+         .nav { padding: 0; }
+
+         .hamburger {
+           display: flex;
            flex-direction: column;
+           justify-content: center;
+           gap: 5px;
+           background: none;
+           border: none;
+           cursor: pointer;
+           padding: 4px;
+           z-index: 200;
          }
-       
-         .header-content h1 {
-           font-size: 2.5rem;
+         .hamburger span,
+         .hamburger span::before,
+         .hamburger span::after {
+           display: block;
+           width: 24px;
+           height: 2px;
+           background: #fff;
+           border-radius: 2px;
+           transition: transform 0.3s;
          }
-       
-         .site-header {
-           padding: 14px 20px;
+         .hamburger span::before,
+         .hamburger span::after {
+           content: '';
+           margin-top: 5px;
          }
-       
+
          .nav-links {
-           gap: 14px;
-           flex-wrap: wrap;
-           justify-content: flex-end;
+           display: none;
+           position: fixed;
+           top: 0;
+           left: 0;
+           right: 0;
+           bottom: 0;
+           background: rgba(44,26,14,0.97);
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           gap: 24px;
+           z-index: 100;
+           padding: 0;
          }
-       
-         .brand {
-           font-size: 12px;
+         .nav-links.open { display: flex; }
+         .nav-links > li > a {
+           font-size: 1rem;
+           padding: 10px 24px;
          }
-       
-         .nav-links a {
-           font-size: 11px;
+         .nav-dropdown-menu {
+           position: static;
+           display: block;
+           background: transparent;
+           border: none;
+           box-shadow: none;
+           padding: 8px 0 0 16px;
          }
+         .nav-dropdown-menu li a {
+           font-size: 0.85rem;
+           color: #b89c84;
+           padding: 4px 0;
+         }
+         .nav-socials { gap: 12px; }
+         .nav-socials a { font-size: 18px; }
+
+         /* --- HERO --- */
+         .hero-container { padding: 0 16px; }
+         .newsletter-panel {
+           position: relative;
+           top: auto;
+           right: auto;
+           width: 100%;
+           max-width: 100%;
+           height: auto;
+           flex-direction: column;
+           align-items: flex-start;
+           gap: 12px;
+           padding: 16px;
+           margin-top: 16px;
+         }
+
+         /* --- ABOUT --- */
+         .about-content { flex-direction: column; }
+         .about-slideshow { height: 300px; }
+         .about-title { font-size: 2rem; }
+
+         /* --- MUSIC CAROUSEL --- */
+         .music-stage { height: 260px; }
+         .music-card {
+           width: min(85vw, 320px);
+         }
+         .music-card.prev { transform: translateX(calc(-50% - 160px)) scale(0.82); }
+         .music-card.next { transform: translateX(calc(-50% + 160px)) scale(0.82); }
+
+         /* --- PERFORMANCES --- */
+         .perf-split {
+           flex-direction: column;
+           gap: 24px;
+         }
+         .perf-split-left,
+         .perf-split-right { flex: 0 0 100%; width: 100%; }
+         .pcal-cell { font-size: 0.6rem; height: 24px; }
+         .pcal-day-name { font-size: 0.55rem; }
+         .pcal-month-header { font-size: 0.65rem; }
+
+         /* --- DUOS --- */
+         .duos-grid {
+           grid-template-columns: 1fr;
+           gap: 20px;
+         }
+         .duo-card { padding: 0 0 20px; }
+
+         /* --- LESSONS --- */
+         .lesson-cards { flex-direction: column; gap: 16px; }
+         .lesson-card-price { font-size: 2rem; }
+         .info-layout {
+           flex-direction: column;
+           gap: 24px;
+         }
+         .lessons-photo-single {
+           width: 100%;
+           max-width: 360px;
+           margin: 0 auto;
+         }
+
+         /* --- TESTIMONIALS --- */
+         .reviews-slideshow { max-width: 100%; }
+         .review-card { padding: 16px 20px; }
+         .review-card p { font-size: 1rem; }
+
+         /* --- CONTACT --- */
+         .contact-form { padding: 24px 16px; }
+
+         /* --- GENERAL --- */
+         section { padding: 50px 0; }
+         .performances-section-title,
+         .duos-title,
+         .reviews-title,
+         .info-title { font-size: 2rem; }
        }
-     
+
+       /* Extra small screens */
+       @media (max-width: 480px) {
+         .newsletter-panel { display: none; }
+         .hero-img { object-position: center top; }
+         .music-card { width: 90vw; }
+         .music-card.prev,
+         .music-card.next { opacity: 0; pointer-events: none; }
+         .music-stage { height: 220px; }
+         .pcal-cell { font-size: 0.55rem; height: 22px; }
+       }
+
