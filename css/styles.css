@@ -1909,34 +1909,31 @@
             margin-bottom: 48px;
         }
 
-        .duos-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 32px;
-            text-align: left;
+        /* Duo slideshow */
+        .duo-slideshow {
+            position: relative;
+            overflow: hidden;
+            border: 1.5px solid rgba(44,26,14,0.12);
+            background: #fff;
+            min-height: 420px;
         }
 
-        .duo-card {
-            background: #f5ede3;
-            border: 1.5px solid #7a9e6e;
+        .duo-slide {
+            display: none;
+            align-items: stretch;
+            min-height: 420px;
         }
 
-        .duo-img-placeholder {
-            width: 100%;
-            height: 240px;
-            background: #3d2414;
+        .duo-slide.active {
             display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
-        .duo-img-wrap {
-            width: 100%;
-            height: 240px;
+        .duo-slide-img {
+            flex: 0 0 42%;
             overflow: hidden;
         }
 
-        .duo-img-wrap img {
+        .duo-slide-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -1944,34 +1941,110 @@
             display: block;
         }
 
-        .duo-info {
-            padding: 24px 24px 28px;
+        .duo-slide-img-placeholder {
+            background: #2c1a0e;
         }
 
-        .duo-name {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #2c1a0e;
-            margin-bottom: 4px;
+        .duo-slide-info {
+            flex: 1;
+            padding: 44px 44px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
         }
 
-        .duo-instrument {
+        .duo-slide-tag {
             font-family: 'Poppins', sans-serif;
-            font-size: 0.72rem;
-            font-weight: 600;
+            font-size: 0.65rem;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: #7a9e6e;
-            margin-bottom: 12px;
+            letter-spacing: 0.15em;
+            color: #4a6b42;
         }
 
-        .duo-desc {
+        .duo-slide-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            font-style: italic;
+            color: #2c1a0e;
+            line-height: 1.15;
+            margin: 0;
+        }
+
+        .duo-slide-performers {
             font-family: 'Poppins', sans-serif;
-            font-size: 0.83rem;
-            color: #4a3020;
-            line-height: 1.7;
-            margin-bottom: 0;
+            font-size: 0.78rem;
+            font-weight: 500;
+            color: #7a6a5a;
+            letter-spacing: 0.04em;
+        }
+
+        .duo-slide-text {
+            border-top: 1px solid rgba(44,26,14,0.1);
+            padding-top: 16px;
+            margin-top: 4px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            overflow-y: auto;
+            max-height: 260px;
+        }
+
+        .duo-slide-text p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.82rem;
+            color: #6b5044;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .duo-slide-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 0 0;
+        }
+
+        .duo-slide-arrow {
+            background: none;
+            border: 1.5px solid #7a9e6e;
+            color: #4a6b42;
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .duo-slide-arrow:hover {
+            background: #4a6b42;
+            color: #fff;
+        }
+
+        .duo-slide-dots {
+            display: flex;
+            gap: 8px;
+        }
+
+        .duo-slide-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(74,107,66,0.25);
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            transition: background 0.2s;
+        }
+
+        .duo-slide-dot.active {
+            background: #4a6b42;
         }
 
         .contact-form {
@@ -2545,11 +2618,11 @@
          .pcal-month-header { font-size: 0.65rem; }
 
          /* --- DUOS --- */
-         .duos-grid {
-           grid-template-columns: 1fr;
-           gap: 20px;
-         }
-         .duo-card { padding: 0 0 20px; }
+         .duo-slide.active { flex-direction: column; }
+         .duo-slide-img { flex: 0 0 auto; height: 240px; width: 100%; }
+         .duo-slide-info { padding: 24px 20px; }
+         .duo-slide-text { max-height: none; }
+         .duo-slide-name { font-size: 1.5rem; }
 
          /* --- LESSONS & PROGRAMS --- */
          .lesson-services { grid-template-columns: 1fr; gap: 16px; }
