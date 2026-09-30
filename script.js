@@ -48,6 +48,32 @@
     resetTimer();
 })();
 
+// Duo slideshow
+(function () {
+    const slides = document.querySelectorAll('.duo-slide');
+    const dotsContainer = document.getElementById('duoSlideDots');
+    if (!slides.length) return;
+    let current = 0;
+
+    slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'duo-slide-dot' + (i === 0 ? ' active' : '');
+        dot.addEventListener('click', () => goTo(i));
+        dotsContainer.appendChild(dot);
+    });
+
+    function goTo(index) {
+        slides[current].classList.remove('active');
+        dotsContainer.querySelectorAll('.duo-slide-dot')[current].classList.remove('active');
+        current = (index + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        dotsContainer.querySelectorAll('.duo-slide-dot')[current].classList.add('active');
+    }
+
+    document.getElementById('duoSlidePrev').addEventListener('click', () => goTo(current - 1));
+    document.getElementById('duoSlideNext').addEventListener('click', () => goTo(current + 1));
+})();
+
 // About photo slideshow
 (function () {
     const slides = document.querySelectorAll('.about-slide');
