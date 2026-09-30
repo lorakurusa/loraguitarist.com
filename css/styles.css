@@ -1192,6 +1192,142 @@
         }   
 
 
+        /* Products Section */
+        #products {
+            background-color: #f2f0ec;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .products-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: #2c1a0e;
+            margin-bottom: 10px;
+        }
+
+        .products-subtitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.85rem;
+            color: #7a6a5a;
+            max-width: 580px;
+            margin: 0 auto 52px;
+            line-height: 1.7;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+            text-align: left;
+        }
+
+        .product-card {
+            background: #fff;
+            border: 1.5px solid rgba(44,26,14,0.12);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 36px 32px 32px;
+        }
+
+        .product-card-inner {
+            margin-bottom: 28px;
+        }
+
+        .product-tag {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: #4a6b42;
+            margin-bottom: 10px;
+        }
+
+        .product-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            font-style: italic;
+            color: #2c1a0e;
+            margin-bottom: 14px;
+            line-height: 1.2;
+        }
+
+        .product-desc {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.84rem;
+            color: #6b5044;
+            line-height: 1.75;
+            margin: 0 0 12px;
+        }
+
+        .product-how {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.8rem;
+            color: #8a7a6a;
+            font-style: italic;
+            line-height: 1.65;
+            margin: 0;
+        }
+
+        .product-code {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #f5ede3;
+            border: 1.5px solid #7a9e6e;
+            padding: 12px 16px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+
+        .product-code-label {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.62rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #4a6b42;
+        }
+
+        .product-code-value {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #2c1a0e;
+            letter-spacing: 0.08em;
+        }
+
+        .product-code-saving {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.8rem;
+            color: #6b5044;
+        }
+
+        .product-btn {
+            display: inline-block;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 12px 22px;
+            background: #2c1a0e;
+            color: #f5ede3;
+            border: 2px solid #2c1a0e;
+            transition: background 0.2s, color 0.2s;
+            align-self: flex-start;
+        }
+
+        .product-btn:hover {
+            background: transparent;
+            color: #2c1a0e;
+        }
+
         /* Contact Section */
         #past-performances {
             background-color: #f2f0ec;
@@ -2437,6 +2573,10 @@
 
          /* --- CONTACT --- */
          .contact-form { padding: 24px 16px; }
+
+         /* --- PRODUCTS --- */
+         .products-grid { grid-template-columns: 1fr; gap: 20px; }
+         .product-card { padding: 24px 20px; }
 
          /* --- GENERAL --- */
          section { padding: 50px 0; }
