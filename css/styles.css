@@ -974,6 +974,16 @@
             border-color: #2c1a0e;
         }
 
+        .info-layout-noimg {
+            display: block;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .info-layout-noimg .info-text {
+            gap: 16px;
+        }
+
 
             grid-template-columns: repeat(3, 1fr);
             gap: 16px;
@@ -1280,7 +1290,7 @@
         }
 
         #performances {
-            background-color: #4a6b42;
+            background-color: #f2f0ec;
             padding: 80px 0;
             text-align: center;
             border: 6px solid #f5ede3;
@@ -1291,14 +1301,14 @@
             font-family: 'Cormorant Garamond', serif;
             font-size: 2.4rem;
             font-weight: 600;
-            color: #f5ede3;
+            color: #2c1a0e;
             margin-bottom: 8px;
         }
 
         .performances-section-subtitle {
             font-family: 'Poppins', sans-serif;
             font-size: 0.85rem;
-            color: #f5ede3;
+            color: #7a6a5a;
             opacity: 0.8;
             margin-bottom: 40px;
         }
