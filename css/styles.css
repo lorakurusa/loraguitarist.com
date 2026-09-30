@@ -858,8 +858,123 @@
             margin: 0;
         }
 
-        .lessons-photo-grid {
+        /* Lesson services */
+        .lesson-services {
             display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .lesson-service-card {
+            border: 1.5px solid #7a9e6e;
+            padding: 28px 26px;
+            background: #fff;
+        }
+
+        .lesson-service-label {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #4a6b42;
+            margin-bottom: 12px;
+        }
+
+        .lesson-service-desc {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.83rem;
+            color: #6b5044;
+            line-height: 1.75;
+            margin: 0;
+        }
+
+        /* Pricing table */
+        .lesson-pricing {
+            background: #f5ede3;
+            border: 1.5px solid #7a9e6e;
+            padding: 28px 32px;
+            margin-bottom: 48px;
+        }
+
+        .lesson-pricing-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: #7a9e6e;
+            margin-bottom: 16px;
+        }
+
+        .lesson-price-table {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .lesson-price-row {
+            display: flex;
+            align-items: baseline;
+            gap: 24px;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(44,26,14,0.1);
+        }
+
+        .lesson-price-row:last-child {
+            border-bottom: none;
+        }
+
+        .lesson-price-currency {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: #4a6b42;
+            flex: 0 0 58px;
+            text-transform: uppercase;
+        }
+
+        .lesson-price-item {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.83rem;
+            color: #2c1a0e;
+        }
+
+        .lesson-price-item strong {
+            font-weight: 700;
+            color: #2c1a0e;
+        }
+
+        .lesson-price-package {
+            margin-top: 4px;
+            padding-top: 14px !important;
+            border-top: 1.5px solid #7a9e6e !important;
+            border-bottom: none !important;
+        }
+
+        /* Contact email */
+        .info-contact-email {
+            margin-top: 8px;
+        }
+
+        .info-contact-email a {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.85rem;
+            color: #4a6b42;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px solid #7a9e6e;
+            padding-bottom: 2px;
+        }
+
+        .info-contact-email a:hover {
+            color: #2c1a0e;
+            border-color: #2c1a0e;
+        }
+
+
             grid-template-columns: repeat(3, 1fr);
             gap: 16px;
             margin-top: 48px;
@@ -2136,8 +2251,10 @@
          .duo-card { padding: 0 0 20px; }
 
          /* --- LESSONS --- */
-         .lesson-cards { flex-direction: column; gap: 16px; }
-         .lesson-card-price { font-size: 2rem; }
+         .lesson-services { grid-template-columns: 1fr; gap: 16px; }
+         .lesson-price-row { flex-wrap: wrap; gap: 8px; }
+         .lesson-price-currency { flex: 0 0 100%; }
+         .lesson-pricing { padding: 20px 18px; }
          .info-layout {
            flex-direction: column;
            gap: 24px;
